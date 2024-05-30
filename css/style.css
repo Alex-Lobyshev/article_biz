@@ -1,0 +1,311 @@
+html * {
+    font-family: Roboto, serif;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main_container {
+    max-width: 992px;
+    margin: 0 auto;
+    padding-top: 48px;
+}
+
+.heading {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+
+.aticle_text p{
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 20px;
+    max-width: 680px;
+}
+
+.aticle_text p>b {
+    font-weight: 700;
+}
+
+.mb-48 {
+    margin-bottom: 48px;
+}
+
+.mt-64 {
+    margin-top: 64px;
+}
+
+.cow img{
+    width: 100%;
+}
+
+.cow figcaption {
+    max-width: 680px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.cow figcaption span {
+    display: block;
+}
+
+
+.aticle_text ol li{
+    list-style-position:inside;
+    margin-bottom: 12px;
+}
+
+.double_block {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.double_block p {
+    margin-right: 48px;
+}
+
+.double_block span{
+    font-size: 13px;
+    line-height: 1.5;
+    color: #0068FF;
+    width: 100%;
+    margin-left: auto;
+}
+
+.personal_opinion {
+    outline: 1px solid rgba(0,0,0, .15);
+    max-width: 680px;
+    padding: 28px 32px;
+    box-sizing: border-box;
+}
+
+.personal_opinion .heading {
+    font-size: 22px;
+    line-height: 1.4;
+    text-align: left;
+    position: relative;
+
+}
+
+.personal_opinion .heading:before {
+    position: absolute;
+    content: url("/image/arrow.png");
+    right: 0;
+    top: -99%;
+}
+
+.personal_opinion div {
+    border-top: 1px solid rgba(0,0,0, .15);
+    padding: 16px 0;
+}
+
+.personal_opinion_link {
+    color: #0068FF;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.personal_opinion_link span:first-child{
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+.personal_opinion_link.personal_opinion_link__last span:first-child{
+    margin-right: 0;
+}
+
+.personal_opinion .image{
+    display: block;
+    width: 100%;
+    max-width: 90px;
+    height: 48px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image__1 {
+    background-image: url("/image/opinin_1.jpg");
+}
+
+.image__2 {
+    background-image: url("/image/opinin_2.jpg");
+}
+
+.personal_opinion .image.image__3 {
+    background-image: url("/image/opinin_3.jpg");
+    background-position: 0 15%;
+}
+
+.personal_opinion .image.image__4 {
+    background-image: url("/image/opinin_4.jpg");
+    background-position: 0 40%;
+}
+
+.full_width .personal_opinion_link span:first-child{
+    display: block;
+    max-width: 100%;
+}
+
+.girl_text {
+    position: relative;
+}
+
+.girl_text figure {
+    max-width: 264px;
+    position: absolute;
+    right: 0;
+}
+
+.girl_text figcaption {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #0068FF;
+    width: 100%;
+    margin-left: auto;
+}
+
+.blockquote_block {
+    border-left: 1px solid #000000;
+    padding-left: 32px;
+    box-sizing: border-box;
+}
+
+.blockquote_block figure {
+    display: flex;
+}
+
+.blockquote_block figure img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.blockquote_block figcaption {
+    display: flex;
+    flex-direction: column;
+}
+
+.blockquote_block figcaption b {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: left;
+
+}
+
+.blockquote_block figcaption span {
+    font-size: 13px;
+    line-height: 1.1;
+    text-align: left;
+
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 24px;
+    }
+
+    .heading.heading__top{
+        padding-left: 80px;
+    }
+
+    .aticle_text {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+
+    .cow figcaption {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .double_block {
+        flex-direction: column;
+    }
+    .double_block p {
+        margin-right: 0;
+    }
+
+    .double_block span {
+        padding-left: 44px;
+        margin-bottom: 16px;
+    }
+
+    .personal_opinion {
+        margin: 0 auto;
+        max-width: 608px;
+    }
+
+    .personal_opinion .heading {
+        padding-left: 0;
+        font-size: 19px;
+    }
+
+    .girl_text figure {
+        position: relative;
+        width: auto;
+        padding-left: 32px;
+        max-width: 315px;
+        margin-left: 0;
+
+    }
+
+    .girl_text figure img{
+        max-width: 190px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .heading.heading__top{
+        padding-left: 16px;
+    }
+
+    .aticle_text {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    .cow figcaption {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    .double_block span {
+        padding-left: 44px;
+        margin-bottom: 16px;
+    }
+
+    .personal_opinion {
+        margin: 0 auto;
+        max-width: 608px;
+    }
+
+    .personal_opinion .heading {
+        padding-left: 0;
+        font-size: 19px;
+    }
+
+
+
+    .girl_text figure img{
+        max-width: 169px;
+    }
+
+    .personal_opinion .image {
+        display: none;
+    }
+}
